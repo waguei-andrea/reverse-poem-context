@@ -72,7 +72,8 @@ export class PoemProvider extends Component {
       title: "",
       content: "",
       listMode: false,
-      editable: true
+      editable: true,
+      hasPoem: false
     });
   }
 
