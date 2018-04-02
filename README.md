@@ -4,13 +4,13 @@ Demo: https://waguei-andrea.github.io/reverse-poem-context/
 Build with React 16.3 new Context API :sparkles:
 
 ### User Flow
-![User Flow](https://i.imgur.com/LNeDypW.png)
+![User Flow](https://github.com/waguei-andrea/reverse-poem-context/blob/master/public/Reverse%20Poems%20v1.4.png)
 
 ### Create new
-![Create new](https://i.imgur.com/UIxGvZb.gif)
+![Create new](https://github.com/waguei-andrea/reverse-poem-context/blob/master/public/create_muti_poems.gif)
 
 ### Edit poems
-![Edit Poems](https://i.imgur.com/3W5DOHU.gif)
+![Edit Poems](https://github.com/waguei-andrea/reverse-poem-context/blob/master/public/edit_poems.gif)
 
 
 ## How to use
