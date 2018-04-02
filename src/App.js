@@ -27,13 +27,15 @@ class App extends Component {
               </div> */}
 
               <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <div className="App-title-container">
-                  <h1 className="App-title">Reverse Poem</h1>
-                  <h2 className="App-tagline">
-                    Create your reverse poem and have fun!
-                  </h2>
-                </div>
+                <a onClick={poemsProp.goToList}>
+                  <img src={logo} className="App-logo" alt="logo" />
+                  <div className="App-title-container">
+                    <h1 className="App-title">Reverse Poem</h1>
+                    <h2 className="App-tagline">
+                      Create your reverse poem and have fun!
+                    </h2>
+                  </div>
+                </a>
               </header>
               <div className="App-bg" />
 
