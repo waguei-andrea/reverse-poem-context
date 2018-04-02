@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display"');
+
+/*App*/
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 65px;
+}
+
+.App-header {
+  height: 140px;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.App-bg {
+  position: fixed;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), white 90%, white 100%), url('./assets/images/bg.jpg');
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+.App-title-container {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  color: #333;
+  padding-left: 20px;
+}
+
+.App-title-container h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.App-title-container h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: -5px 0 0 0;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-content {
+  font-size: large;
+  margin: 0 auto;
+  white-space: pre-line;
+  padding-bottom: 200px;
+}
+
+.App-content-container {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: -40px 0px 100px -90px #000000, 40px 0px 100px -90px #000000;
+  position: relative;
+  min-height: 500px;
+}
+
+.App-content-container form {
+  padding-top: 10px;
+}
+
+.button {
+  margin: 0 20px;
+}
+
+/*Poem content transition*/
+.poem-edit-container {
+  text-align: right;
+}
+
+.App-edit {
+  top: 20px;
+}
+
+.poem-appear {
+  opacity: 0.01;
+  margin-top: -10px;
+}
+
+.poem-appear.poem-appear-active {
+  opacity: 1;
+  transition: all .5s ease-in;
+  margin-top: 0;
+}
+
+/*PoemContentForm*/
+.poem-title-input, .poem-content-input{
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.poem-content-input {
+  resize: none;
+}
+
+/*PoemContent*/
+.poem-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  padding: 20px;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.poem-content-container {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+  position: relative;
+  min-height: 200px;
+}
+
+.poem-content-effect{
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  float: left
+}
+.poem-content-effect.turn {
+  transform: rotateX(180deg);
+}
+
+.poem-content-effect .poem-content {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+}
+
+.poem-content-container .reverse{
+  transform: rotateX(180deg);
+  position: relative;
+}
+.poem-reverse {
+  margin: 50px 0;
+}
+
+/*PoemsList*/
+.poem-item:hover {
+  background-color:	rgba(187, 187, 187, 0.5);
+  cursor: pointer;
+}
+
+.back-button {
+  width: 80%;
+  text-align: left;
+  font-size: .8em;
+  margin: -25px auto 10px;
+  cursor: pointer;
+}
+
+.poem-list-container {
+  min-height: 300px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.poem-no-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+}
+
+li.poem-item {
+  font-size: 1.2em;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.poem-item-title {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.button.poem-delete-buttom {
+  font-size: .7em;
+  display: none;
+}
+
+.poem-item:hover .poem-delete-buttom {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 10px;
+}
+
+/*RWD*/
+@media only screen and (max-width: 560px) {
+  .App-logo {
+      display: none;
+  }
+}
+
+/*Dialog*/
+/* .App-warn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(187, 187, 187, 0.24);
+}
+
+.App-warn-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100px;
+  background-color: #fff;
+  margin: auto;
+  position: absolute;
+  border-radius: 5px;
+} */
+
